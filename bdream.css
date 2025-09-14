@@ -62,11 +62,16 @@ body {
   -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
-
-/* 눌림 */
 #btn:active,
 #btn.pressed {
   transform: scale(var(--press));
+}
+
+/* 비율 유지 */
+/* 가로:세로 = 2:1, 부모 너비 100% */
+#ratio-2x1 {
+  width: 100%;
+  aspect-ratio: 2 / 1;
 }
 
 /* 손 떼면 스프링 복귀 */
