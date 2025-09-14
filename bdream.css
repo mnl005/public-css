@@ -11,7 +11,7 @@ body {
   background-color: #fff;
   overflow: hidden;
 }
-
+/* curl -s https://purge.jsdelivr.net/gh/mnl005/public-css@main/bdream.css */
 ::-webkit-scrollbar {
   display: none;
 }
