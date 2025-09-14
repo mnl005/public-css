@@ -12,6 +12,7 @@ body {
   overflow: hidden;
 }
 /* curl -s https://purge.jsdelivr.net/gh/mnl005/public-css@main/bdream.css */
+/* Ctrl + Shift + R */
 ::-webkit-scrollbar {
   display: none;
 }
