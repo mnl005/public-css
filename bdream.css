@@ -1,0 +1,140 @@
+html,
+body {
+  overscroll-behavior: contain;
+  touch-action: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#backdrop-blur-60 {
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px); /* Safari */
+}
+
+#backdrop-blur-16 {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px); /* Safari */
+}
+#backdrop-blur-24 {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /* Safari */
+}
+
+#backdrop-blur-34 {
+  backdrop-filter: blur(34px);
+  -webkit-backdrop-filter: blur(34px); /* Safari */
+}
+#backdrop-blur-11 {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari */
+}
+
+#backdrop-blur-8 {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari */
+}
+
+#backdrop-blur-4 {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* Safari */
+}
+
+/* Bubble ID: #btn */
+#btn {
+  --press: 0.965; /* 눌림 크기 */
+  --overshoot: 1.012; /* 복귀 오버슈트 */
+  --down: 110ms; /* 눌림 시간 */
+  --up: 220ms; /* 복귀 시간 */
+  transform: translateZ(0);
+  transform-origin: center;
+  transition: transform var(--down) cubic-bezier(0.2, 0.8, 0.2, 1);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* 눌림 */
+#btn:active,
+#btn.pressed {
+  transform: scale(var(--press));
+}
+
+/* 손 떼면 스프링 복귀 */
+#btn.rebound {
+  animation: rebound var(--up) cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes rebound {
+  0% {
+    transform: scale(var(--press));
+  }
+  65% {
+    transform: scale(var(--overshoot));
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #btn {
+    transition: none;
+  }
+  #btn.rebound {
+    animation: none;
+  }
+}
+
+#upanddown {
+  animation: floatUpDown 2s ease-in-out infinite;
+  position: relative;
+}
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#rotate {
+  display: inline-block; /* 회전 보장 */
+  transform-origin: center center; /* 중심 회전 */
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#input-select {
+  animation: pulse 1.2s ease-out infinite;
+  border: 2px solid #008cff !important;
+  border-radius: 8px;
+  outline: 0;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 140, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 140, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 140, 255, 0);
+  }
+}
