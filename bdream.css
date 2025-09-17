@@ -43,6 +43,10 @@ html, body {
   backdrop-filter: blur(34px);
   -webkit-backdrop-filter: blur(34px); /* Safari */
 }
+#backdrop-blur-14 {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari */
+}
 #backdrop-blur-11 {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* Safari */
