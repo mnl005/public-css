@@ -7,7 +7,7 @@ html, body {
   padding: 0;
   background-color: #fff;
 
-  overflow-y: auto;  /* ✅ 이렇게 바꿔야 함 */
+  overflow-y: auto;  
   -webkit-overflow-scrolling: touch;
 }
 
