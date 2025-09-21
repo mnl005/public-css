@@ -2,7 +2,7 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes"> */
-
+/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mnl005/public-css@main/bdream.css"> */
 html, body {
   overscroll-behavior: none;
   touch-action: manipulation;
@@ -19,10 +19,8 @@ html, body {
   ::-webkit-scrollbar {
     display: none;
   }
-/* curl -s https://purge.jsdelivr.net/gh/mnl005/public-css@main/bdream.css */
-/* curl -s https://purge.jsdelivr.net/gh/mnl005/public-css@main/lodding1.gif */
-/* https://cdn.jsdelivr.net/gh/mnl005/public-css@main/lodding1.gif */
-/* Ctrl + Shift + R */
+/* curl -s https://purge.jsdelivr.net/gh/mnl005/public-css@main/public-css-main/bdream.css */
+/* curl -I https://cdn.jsdelivr.net/gh/mnl005/public-css@main/public-css-main/bdream.css */
 
 /* #sk 요소에 스켈레톤(셰이머) 효과d */
 #sk {
