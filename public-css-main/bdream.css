@@ -46,7 +46,7 @@ html, body {
 }
 
 #reward-text {
-  background: linear-gradient(90deg, #FFFEE0, #FAF7CA, #E4A47A);
+  background: linear-gradient(160deg, #FFFEE0, #FAF7CA, #E4A47A);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;                 /* 표준 */
