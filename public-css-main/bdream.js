@@ -1,3 +1,4 @@
+// <script src="https://cdn.jsdelivr.net/gh/mnl005/public-css@main/bdream.js"></script> 
 
 (() => {
   const cssId = 'rg-snap';
