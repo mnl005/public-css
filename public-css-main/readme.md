@@ -18,8 +18,10 @@ if(!window.__passive_patch){
 <meta name="format-detection" content="telephone=no, email=no, address=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mnl005/public-css@main/public-css-main/bdream.css">
-<script src="https://cdn.jsdelivr.net/gh/mnl005/public-css@main/public-css-main/bdream.js"></script>  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mnl005/public-css@ce36919b50095d9cf105fd3165fa7a236c0f92e9/public-css-main/bdream.css">
+<script src="https://cdn.jsdelivr.net/gh/mnl005/public-css@ce36919b50095d9cf105fd3165fa7a236c0f92e9/public-css-main/bdream.js"></script>
+
 
 # curl -s https://purge.jsdelivr.net/gh/mnl005/public-css@main/public-css-main/bdream.css
 # curl -I https://cdn.jsdelivr.net/gh/mnl005/public-css@main/public-css-main/bdream.css 
+# git ls-remote https://github.com/mnl005/public-css.git main | cut -f1
